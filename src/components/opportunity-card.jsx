@@ -1,10 +1,11 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { ArrowUpRight } from 'lucide-react';
-import DetailedProgressBar from './ui/detailed-progress-bar';
+import { motion } from 'framer-motion';
+import { ArrowUpRight, Users, Target, Zap } from 'lucide-react';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Progress } from '@/components/ui/progress';
+import { Button } from '@/components/ui/button';
 import { formatCurrency } from '../utils/currency';
-import { Button } from './ui/button';
 
 const OpportunityCard = ({ opportunity }) => {
   const navigate = useNavigate();
@@ -16,7 +17,8 @@ const OpportunityCard = ({ opportunity }) => {
     goal,
     monetary,
     status,
-    due_at
+    due_at,
+    segment
   } = opportunity;
 
   const progress = {
@@ -24,6 +26,8 @@ const OpportunityCard = ({ opportunity }) => {
     awaiting: goal.percentage_awaiting_payment,
     total: goal.confirmed_payment_percentage + goal.percentage_awaiting_payment
   };
+
+  const daysLeft = Math.ceil((new Date(due_at) - new Date()) / (1000 * 60 * 60 * 24));
 
   const handleViewDetails = () => {
     navigate(`/opportunities/${id}`);
@@ -33,62 +37,64 @@ const OpportunityCard = ({ opportunity }) => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="group relative overflow-hidden rounded-lg border bg-card text-card-foreground shadow transition-all hover:shadow-lg"
+      transition={{ duration: 0.3 }}
     >
-      <div className="relative aspect-video overflow-hidden">
-        <img
-          src={image}
-          alt={name}
-          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-        <div className="absolute bottom-4 left-4 right-4">
-          <h3 className="text-xl font-semibold text-white">{name}</h3>
-        </div>
-      </div>
-
-      <div className="p-4 space-y-4">
-        <p className="text-sm text-muted-foreground line-clamp-2">{description}</p>
-
-        <div className="space-y-2">
-          <div className="flex justify-between text-sm">
-            <span>Valor Total</span>
-            <span className="font-medium">{formatCurrency(goal.max_goal)}</span>
-          </div>
-          <div className="flex justify-between text-sm">
-            <span>Valor Mínimo</span>
-            <span className="font-medium">{formatCurrency(monetary.min_investment_value)}</span>
+      <Card className="overflow-hidden card-hover h-full flex flex-col">
+        <div className="relative h-48 overflow-hidden">
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          />
+          <div className="absolute top-3 right-3 bg-accent text-accent-foreground text-xs font-semibold px-2 py-1 rounded-full">
+            {segment}
           </div>
         </div>
 
-        <DetailedProgressBar
-          value={progress}
-          message="Progresso do Investimento"
-          className="mt-4"
-        />
-
-        <div className="flex items-center justify-between pt-2">
-          <div className="flex items-center space-x-2">
-            <span className={`inline-block h-2 w-2 rounded-full ${
-              status === 'active' ? 'bg-green-500' : 'bg-yellow-500'
-            }`} />
-            <span className="text-sm capitalize">{status}</span>
+        <CardHeader className="pb-2">
+          <div className="flex justify-between items-start">
+            <CardTitle className="text-xl">{name}</CardTitle>
           </div>
-          <span className="text-sm text-muted-foreground">
-            Encerra em {new Date(due_at).toLocaleDateString()}
-          </span>
-        </div>
+        </CardHeader>
 
-        <div className="flex justify-end">
-          <Button 
-            size="sm" 
-            className="gap-1"
-            onClick={handleViewDetails}
-          >
-            Ver detalhes <ArrowUpRight size={16} />
-          </Button>
-        </div>
-      </div>
+        <CardContent className="flex-grow">
+          <p className="text-sm text-muted-foreground line-clamp-3 mb-4">
+            {description}
+          </p>
+
+          <div className="space-y-4">
+            <div>
+              <div className="flex justify-between text-sm mb-1">
+                <span>{formatCurrency(goal.max_goal)}</span>
+                <span className="text-muted-foreground">Meta: {formatCurrency(goal.max_goal)}</span>
+              </div>
+              <Progress value={progress.total} className="h-2" />
+            </div>
+
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="flex items-center gap-2">
+                <Users size={16} className="text-muted-foreground" />
+                <span>Valor Mínimo: {formatCurrency(monetary.min_investment_value)}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Target size={16} className="text-muted-foreground" />
+                <span>{progress.total}% financiado</span>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+
+        <CardFooter className="pt-4 border-t">
+          <div className="w-full flex justify-between items-center">
+            <div className="text-sm text-muted-foreground">
+              <span className="font-medium text-foreground">{daysLeft}</span> dias restantes
+            </div>
+            <Button size="sm" className="gap-1" onClick={handleViewDetails}>
+              Ver detalhes <ArrowUpRight size={16} />
+            </Button>
+          </div>
+        </CardFooter>
+      </Card>
     </motion.div>
   );
 };
