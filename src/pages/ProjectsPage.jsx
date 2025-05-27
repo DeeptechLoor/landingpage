@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Search, Filter, X } from 'lucide-react';
@@ -6,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import ProjectCard from '@/components/ProjectCard';
+import OpportunitiesList from '@/components/opportunities-list';
 import { mockProjects } from '@/data/mockData';
 import { useLocation } from 'react-router-dom';
 
@@ -121,6 +121,10 @@ const ProjectsPage = () => {
             </p>
           </div>
         )}
+
+        <div className="mt-16">
+          <OpportunitiesList />
+        </div>
       </div>
     </motion.div>
   );

@@ -9,6 +9,7 @@ import MainLayout from '@/layouts/MainLayout';
 import HomePage from '@/pages/HomePage';
 import ProjectsPage from '@/pages/ProjectsPage';
 import ProjectDetailPage from '@/pages/ProjectDetailPage';
+import OpportunityDetailsPage from '@/pages/OpportunityDetailsPage';
 import AboutPage from '@/pages/AboutPage';
 import InvestorDashboardPage from '@/pages/InvestorDashboardPage';
 import StartupDashboardPage from '@/pages/StartupDashboardPage.jsx';
@@ -30,6 +31,7 @@ function App() {
               <Route index element={<HomePage />} />
               <Route path="projetos" element={<ProjectsPage />} />
               <Route path="projetos/:id" element={<ProjectDetailPage />} />
+              <Route path="opportunities/:id" element={<OpportunityDetailsPage />} />
               <Route path="sobre" element={<AboutPage />} />
               <Route path="investidor" element={<InvestorDashboardPage />} />
               <Route path="startup" element={<StartupDashboardPage />} />

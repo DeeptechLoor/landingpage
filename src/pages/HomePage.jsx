@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import HeroSection from '@/components/HeroSection';
@@ -8,6 +7,7 @@ import CategorySection from '@/components/CategorySection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import StatsSection from '@/components/StatsSection';
 import CTASection from '@/components/CTASection';
+import OpportunitiesList from '@/components/opportunities-list';
 
 const HomePage = () => {
   return (
@@ -20,6 +20,11 @@ const HomePage = () => {
       <HeroSection />
       <StatsSection />
       <FeaturedProjects />
+      <div className="py-16 bg-muted/50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <OpportunitiesList />
+        </div>
+      </div>
       <HowItWorks />
       <CategorySection />
       <TestimonialsSection />
