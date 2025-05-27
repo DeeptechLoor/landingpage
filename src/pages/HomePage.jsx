@@ -8,6 +8,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import StatsSection from '@/components/StatsSection';
 import CTASection from '@/components/CTASection';
 import OpportunitiesList from '@/components/opportunities-list';
+import BlogSection from '@/components/BlogSection';
 
 const HomePage = () => {
   return (
@@ -26,9 +27,10 @@ const HomePage = () => {
         </div>
       </div>
       <HowItWorks />
-      <CategorySection />
+      <CategorySection /> 
       <TestimonialsSection />
       <CTASection />
+      <BlogSection />
     </motion.div>
   );
 };

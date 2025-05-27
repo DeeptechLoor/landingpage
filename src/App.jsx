@@ -16,6 +16,7 @@ import StartupDashboardPage from '@/pages/StartupDashboardPage.jsx';
 import LoginPage from '@/pages/LoginPage';
 import RegisterPage from '@/pages/RegisterPage';
 import NotFoundPage from '@/pages/NotFoundPage.jsx';
+import BlogPostPage from '@/pages/BlogPostPage';
 
 // Context
 import { AuthProvider } from '@/contexts/AuthContext';
@@ -37,6 +38,7 @@ function App() {
               <Route path="startup" element={<StartupDashboardPage />} />
               <Route path="login" element={<LoginPage />} />
               <Route path="cadastro" element={<RegisterPage />} />
+              <Route path="blog/:id" element={<BlogPostPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Route>
           </Routes>
