@@ -11,7 +11,7 @@ const mockPosts = [
     title: 'O Futuro da Computação Quântica',
     excerpt: 'Como a computação quântica está revolucionando a forma como processamos informações e resolvemos problemas complexos.',
     image: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2070&auto=format&fit=crop',
-    date: '2024-03-15',
+    date: '2025-03-15',
     category: 'Tecnologia',
     content: `A computação quântica está emergindo como uma das tecnologias mais promissoras do século XXI. Com sua capacidade de processar informações em estados quânticos, ela promete revolucionar campos como criptografia, simulação molecular e otimização de problemas complexos.
 
@@ -28,7 +28,7 @@ const mockPosts = [
     title: 'Inovação em Biotecnologia',
     excerpt: 'Novas descobertas em biotecnologia que prometem transformar a medicina e a agricultura nos próximos anos.',
     image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop',
-    date: '2024-03-10',
+    date: '2025-03-10',
     category: 'Biotecnologia',
     content: `A biotecnologia está passando por uma verdadeira revolução, impulsionada por avanços em engenharia genética, bioinformática e técnicas como a edição de genes com CRISPR-Cas9. Essas inovações estão abrindo novas possibilidades para o tratamento de doenças, o desenvolvimento de culturas agrícolas mais resistentes e a criação de materiais biodegradáveis.
   
@@ -45,7 +45,7 @@ const mockPosts = [
     title: 'Sustentabilidade e Energia Renovável',
     excerpt: 'Como as startups estão liderando a transição para energias renováveis e um futuro mais sustentável.',
     image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop',
-    date: '2024-03-05',
+    date: '2025-03-05',
     category: 'Sustentabilidade',
     content: `A transição para fontes de energia renovável está no centro dos esforços globais para combater as mudanças climáticas e construir um futuro mais sustentável. Startups e empresas inovadoras estão desempenhando um papel fundamental nesse movimento, desenvolvendo tecnologias que tornam as energias limpas mais acessíveis e eficientes.
   

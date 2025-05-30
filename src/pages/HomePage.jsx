@@ -20,12 +20,13 @@ const HomePage = () => {
     >
       <HeroSection />
       <StatsSection />
+      {/*
       <FeaturedProjects />
       <div className="py-16 bg-muted/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <OpportunitiesList />
         </div>
-      </div>
+      </div>*/}
       <HowItWorks />
       <CategorySection /> 
       <TestimonialsSection />

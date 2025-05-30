@@ -91,12 +91,12 @@ const Navbar = ({ isScrolled }) => {
               </DropdownMenu>
             ) : (
               <div className="flex items-center space-x-4">
-                <Link to="/login">
+                <a href="https://wtlbloor.netlify.app/investor/login">
                   <Button variant="ghost">Entrar</Button>
-                </Link>
-                <Link to="/cadastro">
+                </a>
+                <a href="https://wtlbloor.netlify.app/investor/login">
                   <Button>Cadastrar</Button>
-                </Link>
+                </a>
               </div>
             )}
           </nav>
@@ -170,12 +170,12 @@ const Navbar = ({ isScrolled }) => {
                 </>
               ) : (
                 <div className="flex flex-col space-y-2">
-                  <Link to="/login" onClick={closeMenu}>
+                  <a href="https://wtlbloor.netlify.app/investor/login">
                     <Button variant="ghost" className="w-full">Entrar</Button>
-                  </Link>
-                  <Link to="/cadastro" onClick={closeMenu}>
+                  </a>
+                  <a href="https://wtlbloor.netlify.app/investor/login">
                     <Button className="w-full">Cadastrar</Button>
-                  </Link>
+                  </a>
                 </div>
               )}
             </div>

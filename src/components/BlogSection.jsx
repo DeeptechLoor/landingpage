@@ -8,7 +8,7 @@ const mockPosts = [
     title: 'O Futuro da Computação Quântica',
     excerpt: 'Como a computação quântica está revolucionando a forma como processamos informações e resolvemos problemas complexos.',
     image: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2070&auto=format&fit=crop',
-    date: '2024-03-15',
+    date: '2025-03-15',
     category: 'Tecnologia',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...'
   },
@@ -17,7 +17,7 @@ const mockPosts = [
     title: 'Inovação em Biotecnologia',
     excerpt: 'Novas descobertas em biotecnologia que prometem transformar a medicina e a agricultura nos próximos anos.',
     image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop',
-    date: '2024-03-10',
+    date: '2025-03-10',
     category: 'Biotecnologia',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...'
   },
@@ -26,7 +26,7 @@ const mockPosts = [
     title: 'Sustentabilidade e Energia Renovável',
     excerpt: 'Como as startups estão liderando a transição para energias renováveis e um futuro mais sustentável.',
     image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop',
-    date: '2024-03-05',
+    date: '2025-03-05',
     category: 'Sustentabilidade',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...'
   }
