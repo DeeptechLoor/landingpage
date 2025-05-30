@@ -55,9 +55,9 @@ const Navbar = ({ isScrolled }) => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/projetos" className="text-foreground/80 hover:text-foreground transition-colors">
+            {/* <Link to="/projetos" className="text-foreground/80 hover:text-foreground transition-colors">
               Projetos
-            </Link>
+            </Link> */}
             <Link to="/sobre" className="text-foreground/80 hover:text-foreground transition-colors">
               Sobre
             </Link>
@@ -124,13 +124,13 @@ const Navbar = ({ isScrolled }) => {
             className="md:hidden bg-background border-t"
           >
             <div className="container mx-auto px-4 py-4 space-y-4">
-              <Link
+              {/* <Link
                 to="/projetos"
                 className="block py-2 text-foreground/80 hover:text-foreground"
                 onClick={closeMenu}
               >
                 Projetos
-              </Link>
+              </Link> */}
               <Link
                 to="/sobre"
                 className="block py-2 text-foreground/80 hover:text-foreground"

@@ -41,11 +41,11 @@ const AboutPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <Link to="/projetos">
+            <a href="https://wtlbloor.netlify.app/investor/login">
                 <Button size="lg">
                   Explorar projetos <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-              </Link>
+              </a>
             </motion.div>
           </div>
         </div>
@@ -323,16 +323,16 @@ const AboutPage = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="flex flex-col sm:flex-row justify-center gap-4"
             >
-              <Link to="/cadastro">
+              <a href="https://wtlbloor.netlify.app/investor/login">
                 <Button size="lg" className="w-full sm:w-auto">
                   Criar uma conta <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-              </Link>
-              <Link to="/projetos">
+              </a>
+              <a href="https://wtlbloor.netlify.app/investor/login">
                 <Button variant="outline" size="lg" className="w-full sm:w-auto">
                   Explorar projetos
                 </Button>
-              </Link>
+              </a>
             </motion.div>
           </div>
         </div>

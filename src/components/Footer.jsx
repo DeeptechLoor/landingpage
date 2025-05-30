@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Linkedin, Instagram, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
 
 const Footer = () => {
@@ -27,21 +27,22 @@ const Footer = () => {
             </motion.div>
             <p className="text-muted-foreground mb-4">
               Conectando investidores a startups inovadoras em tecnologias profundas, impulsionando o futuro da inovação.
-            </p>
+            </p>{/*
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/loor.vc" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/loor.vc/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram size={20} />
               </a>
+              <a href="https://www.linkedin.com/company/loor-venture-capital/about/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Linkedin size={20} />
+              </a>
+              <a href="https://wa.me/551152360459" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <MessageCircle size={20} />
+              </a>
             </div>
+            */}
           </div>
 
           <div>
@@ -53,9 +54,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/projetos" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://wtlbloor.netlify.app/investor/login" className="text-muted-foreground hover:text-primary transition-colors">
                   Projetos
-                </Link>
+                </a>
               </li>
               <li>
                 <Link to="/sobre" className="text-muted-foreground hover:text-primary transition-colors">
@@ -63,14 +64,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/login" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://wtlbloor.netlify.app/investor/login" className="text-muted-foreground hover:text-primary transition-colors">
                   Entrar
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/cadastro" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://wtlbloor.netlify.app/investor/login" className="text-muted-foreground hover:text-primary transition-colors">
                   Cadastrar
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

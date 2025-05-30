@@ -26,9 +26,9 @@ const HomePage = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <OpportunitiesList />
         </div>
-      </div>*/}
+      </div>
+       <CategorySection /> */}
       <HowItWorks />
-      <CategorySection /> 
       <TestimonialsSection />
       <CTASection />
       <BlogSection />

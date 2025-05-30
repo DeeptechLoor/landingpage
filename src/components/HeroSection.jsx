@@ -52,11 +52,11 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 1 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Link to="/projetos">
+              <a href="https://wtlbloor.netlify.app/investor/login">
                 <Button size="lg" className="w-full sm:w-auto">
                   Explorar projetos <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-              </Link>
+              </a> 
               <Link to="/sobre">
                 <Button variant="outline" size="lg" className="w-full sm:w-auto">
                   Saiba mais

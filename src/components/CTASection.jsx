@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
@@ -44,16 +43,18 @@ const CTASection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-col sm:flex-row justify-center gap-4"
           >
-            <Link to="/cadastro">
+            <a href="https://wtlbloor.netlify.app/investor/login">
+            {/*<Link to="/cadastro">*/}
               <Button size="lg" className="w-full sm:w-auto">
                 Começar agora <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-            </Link>
-            <Link to="/projetos">
+            </a>
+            <a href="https://wtlbloor.netlify.app/investor/login">
+            {/*<Link to="/projetos">*/}
               <Button variant="outline" size="lg" className="w-full sm:w-auto">
                 Explorar projetos
               </Button>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </div>
