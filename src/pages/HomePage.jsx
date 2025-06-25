@@ -9,6 +9,9 @@ import StatsSection from '@/components/StatsSection';
 import CTASection from '@/components/CTASection';
 import OpportunitiesList from '@/components/opportunities-list';
 import BlogSection from '@/components/BlogSection';
+import CTASection1 from '@/components/CTASection1';
+import Returns from '@/components/Returns';
+import HowItInvest from '@/components/HowItInvest';
 
 const HomePage = () => {
   return (
@@ -19,8 +22,10 @@ const HomePage = () => {
       transition={{ duration: 0.3 }}
     >
       <HeroSection />
-      <StatsSection />
+      <CTASection1 />
       {/*
+      <StatsSection />
+
       <FeaturedProjects />
       <div className="py-16 bg-muted/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,7 +34,9 @@ const HomePage = () => {
       </div>
        <CategorySection /> */}
       <HowItWorks />
-      <TestimonialsSection />
+      <Returns />
+      <HowItInvest />
+     {/*  <TestimonialsSection />*/}
       <CTASection />
       <BlogSection />
     </motion.div>
