@@ -74,7 +74,7 @@ const HeroSection = () => {
                 <div className="rounded-full bg-primary/10 p-1">
                   <Shield size={16} className="text-primary" />
                 </div>
-                <span className="text-sm">Investimentos seguros</span>
+                <span className="text-sm">Investimentos em startups de modo seguro</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="rounded-full bg-primary/10 p-1">
