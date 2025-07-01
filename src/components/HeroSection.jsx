@@ -34,7 +34,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
             >
-              Invista no <span className="gradient-text">futuro</span> da tecnologia profunda
+              Invista no <span className="gradient-text">futuro</span> das DeepTechs
             </motion.h1>
             
             <motion.p
@@ -108,21 +108,21 @@ const HeroSection = () => {
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <div className="glass-effect rounded-lg p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-semibold">Projetos em destaque</h3>
-                    <span className="text-sm text-accent font-medium">+30 projetos</span>
+                    <h3 className="font-semibold">Oportunidades em destaque</h3>
+                    <span className="text-sm text-accent font-medium">+30 oportunidades</span>
                   </div>
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="text-sm">Biotecnologia</span>
-                      <span className="text-sm font-medium">12 projetos</span>
+                      <span className="text-sm font-medium">12 startups</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm">Inteligência Artificial</span>
-                      <span className="text-sm font-medium">8 projetos</span>
+                      <span className="text-sm font-medium">8 startups</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm">Energia Sustentável</span>
-                      <span className="text-sm font-medium">6 projetos</span>
+                      <span className="text-sm font-medium">6 startups</span>
                     </div>
                   </div>
                 </div>

@@ -38,6 +38,7 @@ const TestimonialsSection = () => {
           <p className="text-muted-foreground text-lg">
           O retorno para os investidores acontece, em geral, no momento da chamada "saída" (ou exit), que ocorre quando a startup é adquirida por um comprador estratégico. 
           </p>
+          <p className="text-muted-foreground text-lg">Nosso processo simplificado permite que você invista em tecnologias inovadoras de forma segura e transparente.</p>
         </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

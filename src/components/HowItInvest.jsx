@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Building, FileSignature, CreditCard, TrendingUp } from 'lucide-react';
+import { Building, FileSignature, CreditCard, TrendingUp, BarChart } from 'lucide-react';
 
 const steps = [
   {
@@ -23,6 +23,11 @@ const steps = [
     title: 'Acompanhe sua investida',
     description: 'Parabéns! Agora você é um investidor e pode participar dos resultados do negócio.',
   },
+  {
+    icon: <BarChart className="h-8 w-8" />,
+    title: 'Obtenha Retornos',
+    description: 'Participe do sucesso das startups com potencial de alto retorno financeiro e impacto positivo na sociedade.',
+  },
 ];
 
 const HowItWorks = () => {
@@ -40,7 +45,7 @@ const HowItWorks = () => {
 
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={index}

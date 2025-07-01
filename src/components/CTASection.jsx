@@ -23,7 +23,7 @@ const CTASection = () => {
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl font-bold tracking-tight mb-6"
           >
-            Pronto para investir no futuro das <span className="gradient-text">tecnologias profundas</span>?
+            Pronto para investir no futuro das <span className="gradient-text">deep techs</span>?
           </motion.h2>
           
           <motion.p

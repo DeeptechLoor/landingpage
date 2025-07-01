@@ -12,6 +12,7 @@ import BlogSection from '@/components/BlogSection';
 import CTASection1 from '@/components/CTASection1';
 import Returns from '@/components/Returns';
 import HowItInvest from '@/components/HowItInvest';
+import SelectionCriteria from '@/components/SelectionCriteria';
 
 const HomePage = () => {
   return (
@@ -32,10 +33,12 @@ const HomePage = () => {
           <OpportunitiesList />
         </div>
       </div>
-       <CategorySection /> */}
-      <HowItWorks />
-      <Returns />
+       <CategorySection /> 
+      <HowItWorks />*/}
       <HowItInvest />
+      <Returns />
+      <SelectionCriteria />
+
      {/*  <TestimonialsSection />*/}
       <CTASection />
       <BlogSection />

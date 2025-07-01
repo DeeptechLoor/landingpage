@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle, Users, TrendingUp, Shield, Zap, Award } from 'lucide-react';
@@ -34,7 +33,16 @@ const AboutPage = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-xl text-muted-foreground mb-8"
             >
-              Somos uma plataforma de equity crowdfunding dedicada a conectar investidores visionários a startups inovadoras em tecnologias profundas, impulsionando o futuro da inovação no Brasil e no mundo.
+              A DeepTech Invest é uma plataforma completa de investimento em tecnologias profundas. Atuamos em duas frentes integradas:
+              <br />
+              <br />
+              Crowdfunding especializado em Deep Tech, Deeptechs.vc, conectando startups científicas a investidores qualificados por meio de captações reguladas, seguras e com curadoria técnica.
+              <br />
+              <br />
+              Soluções para fundos e blended finance, apoiando gestores, e investidores institucionais na estruturação de veículos de investimento, seleção de deeptechs e estratégias híbridas de fomento à inovação.
+              <br />
+              <br />
+              Combinamos capital, conhecimento técnico e impacto positivo em uma única plataforma. 
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -43,7 +51,7 @@ const AboutPage = () => {
             >
             <a href="https://wtlbloor.netlify.app/investor/login">
                 <Button size="lg">
-                  Explorar projetos <ArrowRight className="ml-2 h-4 w-4" />
+                  Explorar oportunidades <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </a>
             </motion.div>
@@ -186,27 +194,25 @@ const AboutPage = () => {
             </p>
           </motion.div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             {[
               {
-                name: 'Roberto Almeida',
-                role: 'CEO & Fundador',
-                bio: 'Ex-executivo de venture capital com mais de 15 anos de experiência em investimentos em tecnologia.'
+                name: 'Monika Heringer',
+                role: 'CEO & Fundadora',
+                bio: 'Executiva de negócios e investidora de startups com sólida atuação em P&D e tecnologias emergentes como IA, digital twins, biotecnologia e sustentabilidade. Experiência internacional com centros de inovação na Europa e liderança em projetos complexos para o setor produtivo. Doutoranda em Relações Internacionais (UnB), com foco em geopolítica e cadeias globais de valor.',
+                photo: '/images/ceo.jpg',
               },
               {
-                name: 'Dra. Camila Santos',
-                role: 'Diretora de Tecnologia',
-                bio: 'PhD em Ciência da Computação com especialização em IA e experiência em startups de deeptech.'
+                name: 'Juliana Machado Ceccato',
+                role: 'Diretora de Investimentos & Fundadora',
+                bio: 'Ex-executiva de PE/VC com 15 anos de experiência em investimentos estruturados. Ex-gestora do HUB investMCTI e da escola investAcademy, voltada para estrutura de financiamento para CT&I. Economista, especialista em Finanças e liderança em inovação.',
+                photo: '/images/dif.jpg',
               },
               {
-                name: 'Lucas Oliveira',
-                role: 'Diretor de Operações',
-                bio: 'Empreendedor serial com três exits bem-sucedidos em startups de tecnologia.'
-              },
-              {
-                name: 'Fernanda Costa',
-                role: 'Diretora de Investimentos',
-                bio: 'Especialista em análise de investimentos com foco em tecnologias emergentes e inovação.'
+                name: 'Hugo Giallanza',
+                role: 'Advisor',
+                bio: 'Presidente da Brasil Startups e CEO do Loor, equity crowdfunding, formado em Administração de Empresas, especialista em validação de novos modelos de negócios, trabalhou com tecnologia da informação na DELL e IBM com clientes do governo Federal, Estadual e Municipal e 2014 foi considerado como um dos 10 empreendedores que mais contribuíram com o ecossistema de startups nacional. Foi conselheiro do SENAC-DF nos anos de 2014 à 2016 e membro do Núcleo de Inovação da FIBRA-DF pelo SINFOR-DF. Já captou mais de 8 milhões em projetos que fomentam a cultura e educação empreendedora no país.',
+                photo: '/images/advisor.jpg',
               }
             ].map((member, index) => (
               <motion.div
@@ -217,10 +223,12 @@ const AboutPage = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <div className="bg-card rounded-lg overflow-hidden border shadow-sm">
-                  <div className="aspect-square bg-muted flex items-center justify-center">
-                    <div className="rounded-full bg-primary/10 w-24 h-24 flex items-center justify-center text-primary font-semibold text-2xl">
-                      {member.name.charAt(0)}
-                    </div>
+                  <div className="w-full h-80 bg-muted flex items-center justify-center overflow-hidden">
+                    <img
+                      src={member.photo}
+                      alt={member.name}
+                      className="object-cover w-full h-full"
+                    />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
@@ -246,7 +254,7 @@ const AboutPage = () => {
           >
             <h2 className="text-3xl font-bold tracking-tight mb-4">Perguntas Frequentes</h2>
             <p className="text-lg text-muted-foreground">
-              Respostas para as dúvidas mais comuns sobre nossa plataforma e como investir em tecnologias profundas.
+              Respostas para as dúvidas mais comuns sobre nossa plataforma e como investir em deep techs.
             </p>
           </motion.div>
           
@@ -254,20 +262,20 @@ const AboutPage = () => {
             <Accordion type="single" collapsible className="w-full">
               {[
                 {
-                  question: 'O que são tecnologias profundas (deeptech)?',
-                  answer: 'Tecnologias profundas são inovações baseadas em avanços científicos e engenharia de alta complexidade que resolvem desafios técnicos significativos. Incluem áreas como biotecnologia, computação quântica, inteligência artificial avançada, nanotecnologia, entre outras.'
+                  question: 'O que são deep techs?',
+                  answer: 'Deep techs são inovações baseadas em avanços científicos e engenharia de alta complexidade que resolvem desafios técnicos significativos. Incluem áreas como biotecnologia, computação quântica, inteligência artificial avançada, nanotecnologia, entre outras.'
                 },
                 {
                   question: 'Como funciona o investimento através da plataforma?',
-                  answer: 'Os investidores podem explorar projetos, analisar documentos e informações detalhadas, e decidir quanto desejam investir. O investimento é feito diretamente pela plataforma, com toda a documentação legal necessária. Após o fechamento da rodada, os investidores recebem participação acionária na startup.'
+                  answer: 'Os investidores podem explorar oportunidades, analisar documentos e informações detalhadas, e decidir quanto desejam investir. O investimento é feito diretamente pela plataforma, com toda a documentação legal necessária. Após o fechamento da rodada, os investidores recebem participação acionária na startup.'
                 },
                 {
                   question: 'Qual é o valor mínimo para investir?',
-                  answer: 'O valor mínimo de investimento varia de acordo com cada projeto, mas geralmente começa em R$ 1.000. Isso permite que mais pessoas tenham acesso a oportunidades de investimento em tecnologias inovadoras.'
+                  answer: 'O valor mínimo de investimento varia de acordo com cada oportunidade, mas geralmente começa em R$ 1.000. Isso permite que mais pessoas tenham acesso a oportunidades de investimento em tecnologias inovadoras.'
                 },
                 {
-                  question: 'Como são selecionados os projetos da plataforma?',
-                  answer: 'Realizamos um rigoroso processo de due diligence que avalia a tecnologia, equipe, mercado, propriedade intelectual e potencial de crescimento. Apenas cerca de 5% dos projetos analisados são aprovados para captação na plataforma.'
+                  question: 'Como são selecionados os oportunidades da plataforma?',
+                  answer: 'Realizamos um rigoroso processo de due diligence que avalia a tecnologia, equipe, mercado, propriedade intelectual e potencial de crescimento. Apenas cerca de 5% das oportunidades analisadas são aprovadas para captação na plataforma.'
                 },
                 {
                   question: 'Quais são os riscos de investir em deeptech?',
@@ -330,7 +338,7 @@ const AboutPage = () => {
               </a>
               <a href="https://wtlbloor.netlify.app/investor/login">
                 <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                  Explorar projetos
+                  Explorar oportunidades
                 </Button>
               </a>
             </motion.div>
