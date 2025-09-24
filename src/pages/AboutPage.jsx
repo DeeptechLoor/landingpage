@@ -25,7 +25,7 @@ const AboutPage = () => {
               transition={{ duration: 0.5 }}
               className="text-4xl md:text-5xl font-bold tracking-tight mb-6"
             >
-              Sobre a <span className="gradient-text">DeepTech Invest</span>
+              Sobre a <span className="gradient-text">DeepTech Inovação e capital</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ const AboutPage = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-xl text-muted-foreground mb-8"
             >
-              A DeepTech Invest é uma plataforma completa de investimento em tecnologias profundas. Atuamos em duas frentes integradas:
+              A DeepTech Inovação e capital é uma plataforma completa de investimento em tecnologias profundas. Atuamos em duas frentes integradas:
               <br />
               <br />
               Crowdfunding especializado em Deep Tech, Deeptechs.vc, conectando startups científicas a investidores qualificados por meio de captações reguladas, seguras e com curadoria técnica.
