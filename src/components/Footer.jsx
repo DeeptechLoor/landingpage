@@ -115,7 +115,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin size={16} className="text-muted-foreground mt-1" />
-                <span className="text-muted-foreground">Endereço: SQN 212, bloco J, Brasília – DF-Brasil</span>
+                <span className="text-muted-foreground">QUADRA SHIS QI 17 CONJUNTO 8, CASA, número 18, bairro LAGO SUL Brasília – DF-Brasil</span>
               </li>
             </ul>
           </div>
